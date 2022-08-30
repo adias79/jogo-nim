@@ -1,7 +1,7 @@
 def main():
     escolha = 0
     while escolha != 1 and escolha != 2:
-        print("Bem-vindo ao jogo do NIM! Escolha:")
+        print("Bem-vindo ao jogo Nim! Escolha:")
         print("1 - para jogar uma partida isolada")
         print("2 - para jogar um campeonato")
         escolha = int(input("Sua escolha: "))
@@ -90,11 +90,13 @@ def campeonato():
     print("\nPlacar: Você",usuario,"X",computador,"Computador")
 
 
-escolha = main()
+if __name__ == "__main__":
+    
+    escolha = main()
 
-if escolha == 1:
-    partida()
-else:
-    campeonato()
+    if escolha == 1:
+        partida()
+    else:
+        campeonato()
 
 
